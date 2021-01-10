@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 09, 2021 at 10:43 AM
+-- Generation Time: Jan 10, 2021 at 01:12 PM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -275,9 +275,9 @@ INSERT INTO `result` (`id`, `student_id`, `ques_id`, `selected_option`, `givenma
 (10, 'aarti', 1, 'A', 1, '2021-01-09', '2021-01-09', 1),
 (11, 'aarti', 13, 'B', 1, '2021-01-09', '2021-01-09', 2),
 (12, 'aarti', 2, 'A', 1, '2021-01-09', '2021-01-09', 2),
-(13, 'aarti', 4, 'B', 1, '2021-01-09', '2021-01-09', 1),
+(13, 'aarti', 4, 'A', 1, '2021-01-09', '2021-01-09', 2),
 (14, 'aarti', 5, 'A', 1, '2021-01-09', '2021-01-09', 2),
-(15, 'aarti', 6, 'C', 1, '2021-01-09', '2021-01-09', 2),
+(15, 'aarti', 6, 'A', 1, '2021-01-09', '2021-01-09', 1),
 (16, 'aarti', 7, 'A', 1, '2021-01-09', '2021-01-09', 1),
 (17, 'aarti', 8, 'A', 1, '2021-01-09', '2021-01-09', 2),
 (18, 'aarti', 9, 'A', 1, '2021-01-09', '2021-01-09', 1),
@@ -320,7 +320,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `student_id`, `name`, `contact`, `admin_id`, `admin_email`, `validity`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(3, 'aarti', 'aarti', 9146328941, NULL, NULL, NULL, '$2y$10$U8M2Wka9UDcAT9vLrZzTn.cZG1aJ4Wbg4685epsoXK1ZwgKE53WbC', 'mLiCbi87BOGScCkaWn16cSXDfND5uLx9S9xJz6HFSkkPh7NDyrk4ZjMBwV5W', '2021-01-09 01:40:33', '2021-01-09 01:40:33');
+(3, 'aarti', 'aarti', 9146328941, NULL, NULL, NULL, '$2y$10$U8M2Wka9UDcAT9vLrZzTn.cZG1aJ4Wbg4685epsoXK1ZwgKE53WbC', 'm1eUcuN4uEKJFH8K59sCw8fCVh5QRVSJ3gfinzQswLEJujaOvDcWX798ZMqJ', '2021-01-09 01:40:33', '2021-01-09 01:40:33');
 
 --
 -- Indexes for dumped tables
@@ -402,13 +402,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `exam`
@@ -420,7 +420,7 @@ ALTER TABLE `exam`
 -- AUTO_INCREMENT for table `exam_question`
 --
 ALTER TABLE `exam_question`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `exam_subject`
